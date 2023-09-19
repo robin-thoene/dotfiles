@@ -122,3 +122,4 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 alias dotfiles='/usr/bin/git --git-dir=/home/robin/dev/robin-thoene/dotfiles/ --work-tree=/home/robin'
+path+=('/home/robin/.cargo/bin')
