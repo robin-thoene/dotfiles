@@ -65,7 +65,6 @@
         "interval": 60,
         "format": "{:%e %b %Y %H:%M}",
         "tooltip": true,
-        "tooltip-format": "<big>{:%B %Y}</big>\n<tt>{calendar}</tt>"
     },
 
     "cpu": {
