@@ -38,6 +38,7 @@
         "backlight",
 
         // system
+        "sway/language",
         "custom/adaptive-light",
         "custom/sunset",
 
