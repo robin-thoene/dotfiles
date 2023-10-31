@@ -101,19 +101,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export DRACULA_DISPLAY_NEW_LINE=1
 alias gfc="git fetch && git checkout"
-alias startdev="podman machine start && podman start storage-dev redis-dev mssql-dev"
-alias stopdev="podman stop storage-dev redis-dev mssql-dev && podman machine stop"
-alias update_all="~/dev/robin-thoene/device-automation/arch/update.sh"
-if [ -x /usr/bin/fzf  ]
-        then
-                source /usr/share/fzf/key-bindings.zsh
-fi
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-export DRACULA_DISPLAY_NEW_LINE=1
-alias gfc="git fetch && git checkout"
-alias startdev="podman machine start && podman start storage-dev redis-dev mssql-dev"
-alias stopdev="podman stop storage-dev redis-dev mssql-dev && podman machine stop"
+alias startdev="podman start storage-dev redis-dev mssql-dev"
+alias stopdev="podman stop storage-dev redis-dev mssql-dev"
 alias update_all="~/dev/robin-thoene/device-automation/arch/update.sh"
 if [ -x /usr/bin/fzf  ]
         then
