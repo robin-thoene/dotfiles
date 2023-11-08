@@ -1,0 +1,2 @@
+#!/bin/bash
+cp -R ~/Library/Application\ Support/TeamSpeak\ 3/styles/DarkenTS/Customisation/2\ -\ Scrollbar\ Buttons/1\ -\ No\ Buttons\ \(Default\)/DarkenTS.qss ~/Library/Application\ Support/TeamSpeak\ 3/styles

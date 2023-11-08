@@ -1,0 +1,16 @@
+/* Additional DarkenTS-specific settings. Ignore this file. */
+
+TextBrowser#InfoFrame, TextBrowser#InfoFrame:focus, QToolButton#whisperListAddButton, QToolButton#whisperListDelButton,
+QToolButton#whisperListRenameButton { font-size: 9pt; font-family: "Segoe UI", Arial, sans-serif; }
+
+ChatLineEdit, ImprovedTextEdit, QCalendarWidget, QCheckBox, QComboBox, QDateEdit, QDateTimeEdit, QDoubleSpinBox, QGroupBox,
+QGroupBox, QHeaderView, QLabel, QLineEdit, QMenu, /*QMenuBar, */QPlainTextEdit, ProgressBar, QPushButton, QRadioButton, QSpinBox, QTabBar, QTableView,
+QTimeEdit, QToolBox, QToolButton, QToolTip, QTreeView, QTreeView, QLabel#directoryLabel { font-size: 10pt; font-family: "Segoe UI", Arial, sans-serif; }
+
+QListView, /*QLabel#OptionsHeadlineTitleLabel, */QLabel#downloadFolderLabel, QLabel#RecorderLabel { font-size: 12pt; font-family: "Segoe UI", Arial, sans-serif; }
+
+QCalendarWidget QAbstractItemView:enabled { font-size: 14pt; font-family: "Segoe UI", Arial, sans-serif; }
+
+/* ---- */
+
+config QLabel, config QCheckBox { font-size: 10pt; }

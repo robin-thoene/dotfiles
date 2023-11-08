@@ -1,0 +1,32 @@
+/* WIP version that fixes a lot of obvious problems. If you are a Mac user and feel like something does not
+look like it is supposed to, please feel free to contact me via the links available in the Feedback directory!
+
+Known problems:
+- Scroll buttons in long QComboBox lists ('Server Browser -> Countries' for example). Linux = styleable, Mac = not styleable. Too few appearances to invest more time into solving this.
+*/
+
+QWidget { border: transparent; }
+
+QTabWidget::tab-bar { alignment: left; }
+
+QTreeView::branch:selected { background-color: rgb(29,29,29); }
+
+QHeaderView::down-arrow { image: url('styles:DarkenTS/gfx/gui/arrows/down.svg'); }
+QHeaderView::up-arrow { image: url('styles:DarkenTS/gfx/gui/arrows/up.svg'); }
+
+QComboBox::item {
+  background: transparent;
+  selection-background-color: rgb(62,79,94);
+}
+
+QComboBox QAbstractItemView { border: 1px solid rgb(28,30,34); }
+
+QComboBox::indicator:checked { image: url('styles:DarkenTS/gfx/gui/controls/checkbox_checked.svg'); }
+
+QComboBox::separator {
+  height: 1px;
+  margin-right: 1px;
+  background-color: rgb(85,85,85);
+}
+
+QRadioButton::indicator, QListView::indicator, QCheckBox::indicator, QGroupBox::indicator, QTreeView::indicator { margin: 2px 2px 2px 0; }
