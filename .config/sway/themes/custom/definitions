@@ -5,7 +5,7 @@ set $cursor-theme xcursor-breeze
 set $gui-font JetBrainsMono Nerd Font 11
 set $term-font JetBrainsMono Nerd Font 11
 set $gtk-color-scheme prefer-dark
-set $kvantum-theme Matcha-Dark
+set $kvantum-theme Dracula
 
 set $color0  #141a1b
 set $color1  #282a2b
