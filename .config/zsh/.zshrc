@@ -103,7 +103,7 @@ export DRACULA_DISPLAY_NEW_LINE=1
 alias gfc="git fetch && git checkout"
 alias startdev="podman start storage-dev redis-dev mssql-dev"
 alias stopdev="podman stop storage-dev redis-dev mssql-dev"
-alias update_all="~/dev/robin-thoene/device-automation/arch/update.sh"
+alias uall="~/dev/robin-thoene/device-automation/arch/update.sh"
 if [ -x /usr/bin/fzf  ]
         then
                 source /usr/share/fzf/key-bindings.zsh
