@@ -5,7 +5,7 @@
 # Read `man 5 sway` for a complete reference.
 
 # styles - set the folder for your theme definition file
-set $theme ~/.config/sway/themes/custom
+set $theme /usr/share/sway/themes/matcha-green
 
 # theme variables
 include $theme/definitions
