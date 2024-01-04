@@ -103,7 +103,7 @@ export DRACULA_DISPLAY_NEW_LINE=1
 alias gfc="git fetch && git checkout"
 alias startdev="podman start storage-dev redis-dev mssql-dev"
 alias stopdev="podman stop storage-dev redis-dev mssql-dev"
-alias uall="~/dev/robin-thoene/device-automation/arch/update.sh"
+alias uall="~/dev/robin-thoene/device-automation/manjaro/update.sh"
 if [ -x /usr/bin/fzf  ]
         then
                 source /usr/share/fzf/key-bindings.zsh
@@ -112,3 +112,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 alias dotfiles='/usr/bin/git --git-dir=/home/robin/dev/robin-thoene/dotfiles/ --work-tree=/home/robin'
 path+=('/home/robin/.cargo/bin')
+path+=('/home/robin/.dotnet/tools')
