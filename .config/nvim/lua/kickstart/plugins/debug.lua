@@ -40,7 +40,7 @@ return {
       -- You'll need to check that you have the required things installed
       -- online, please don't ask me how to install them :)
       ensure_installed = {
-        'lldb',
+        'codelldb',
       },
     }
 
@@ -82,5 +82,7 @@ return {
     dap.listeners.after.event_initialized['dapui_config'] = dapui.open
     dap.listeners.before.event_terminated['dapui_config'] = dapui.close
     dap.listeners.before.event_exited['dapui_config'] = dapui.close
+
+    require('dap.ext.vscode').load_launchjs(nil, { codelldb = { 'rust' } })
   end,
 }
