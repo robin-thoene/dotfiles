@@ -432,6 +432,7 @@ require('lazy').setup {
       local servers = {
         -- rust_analyzer = {},
         tsserver = {},
+        texlab = {},
         lua_ls = {
           -- cmd = {...},
           -- filetypes { ...},
@@ -473,6 +474,7 @@ require('lazy').setup {
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format lua code
+        'latexindent',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -501,6 +503,7 @@ require('lazy').setup {
       },
       formatters_by_ft = {
         lua = { 'stylua' },
+        tex = { 'latexindent' },
         -- Conform can also run multiple formatters sequentially
         --
         -- You can use a sub-list to tell conform to run *until* a formatter
