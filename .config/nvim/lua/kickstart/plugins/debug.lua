@@ -41,7 +41,14 @@ return {
       -- online, please don't ask me how to install them :)
       ensure_installed = {
         'codelldb',
+        'netcoredbg',
       },
+    }
+
+    dap.adapters.coreclr = {
+      type = 'executable',
+      command = 'netcoredbg',
+      args = { '--interpreter=vscode' },
     }
 
     -- Basic debugging keymaps, feel free to change to your liking!
@@ -83,6 +90,6 @@ return {
     dap.listeners.before.event_terminated['dapui_config'] = dapui.close
     dap.listeners.before.event_exited['dapui_config'] = dapui.close
 
-    require('dap.ext.vscode').load_launchjs(nil, { codelldb = { 'rust' } })
+    require('dap.ext.vscode').load_launchjs(nil, { codelldb = { 'rust' }, coreclr = { 'cs' } })
   end,
 }
