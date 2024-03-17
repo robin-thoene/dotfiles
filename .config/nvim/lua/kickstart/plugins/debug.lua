@@ -51,6 +51,8 @@ return {
       args = { '--interpreter=vscode' },
     }
 
+    dap.adapters.lldb = dap.adapters.codelldb
+
     -- Basic debugging keymaps, feel free to change to your liking!
     vim.keymap.set('n', '<F5>', dap.continue, { desc = 'Debug: Start/Continue' })
     vim.keymap.set('n', '<F11>', dap.step_into, { desc = 'Debug: Step Into' })
@@ -90,6 +92,6 @@ return {
     dap.listeners.before.event_terminated['dapui_config'] = dapui.close
     dap.listeners.before.event_exited['dapui_config'] = dapui.close
 
-    require('dap.ext.vscode').load_launchjs(nil, { codelldb = { 'rust' }, coreclr = { 'cs' } })
+    require('dap.ext.vscode').load_launchjs(nil, { codelldb = { 'rust' }, lldb = { 'rust' }, coreclr = { 'cs' } })
   end,
 }
