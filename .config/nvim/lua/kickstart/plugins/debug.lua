@@ -23,6 +23,10 @@ return {
       version = '^4', -- Recommended
       ft = { 'rust' },
     },
+    {
+      'stevearc/overseer.nvim',
+      opts = {},
+    },
   },
   config = function()
     local dap = require 'dap'
@@ -92,6 +96,8 @@ return {
     dap.listeners.before.event_terminated['dapui_config'] = dapui.close
     dap.listeners.before.event_exited['dapui_config'] = dapui.close
 
+    require('overseer').setup()
+    require('dap.ext.vscode').json_decode = require('overseer.json').decode
     require('dap.ext.vscode').load_launchjs(nil, { codelldb = { 'rust' }, lldb = { 'rust' }, coreclr = { 'cs' } })
   end,
 }
