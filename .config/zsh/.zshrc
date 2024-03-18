@@ -104,6 +104,7 @@ alias gfc="git fetch && git checkout"
 alias startdev="podman start storage-dev redis-dev mssql-dev"
 alias stopdev="podman stop storage-dev redis-dev mssql-dev"
 alias uall="~/dev/robin-thoene/device-automation/manjaro/update.sh"
+alias n="nvim ."
 if [ -x /usr/bin/fzf  ]
         then
                 source /usr/share/fzf/key-bindings.zsh
