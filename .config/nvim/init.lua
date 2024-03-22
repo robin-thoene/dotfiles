@@ -430,7 +430,7 @@ require('lazy').setup {
       --  - settings (table): Override the default settings passed when initializing the server.
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
-        -- rust_analyzer = {},
+        rust_analyzer = {},
         omnisharp = {},
         tsserver = {},
         tailwindcss = {},
@@ -478,6 +478,7 @@ require('lazy').setup {
         'stylua',
         'latexindent',
         'prettier',
+        'netcoredbg',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
