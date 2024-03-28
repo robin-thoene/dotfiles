@@ -1,3 +1,6 @@
+-- Disable as per documentation of nvim-tree
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
@@ -232,8 +235,20 @@ require('lazy').setup {
       --  If you already have a Nerd Font, or terminal set up with fallback fonts
       --  you can enable this
       { 'nvim-tree/nvim-web-devicons' },
+      -- File explorer
+      'nvim-tree/nvim-tree.lua',
+      version = '*',
+      lazy = false,
+      dependencies = {
+        'nvim-tree/nvim-web-devicons',
+      },
     },
     config = function()
+      -- Setup the file explorer
+      require('nvim-tree').setup {}
+      -- Setup custom keymaps
+      vim.keymap.set('n', '<C-b>', '<cmd>NvimTreeToggle<CR>', { desc = 'Toggle file explorer' })
+
       -- Telescope is a fuzzy finder that comes with a lot of different things that
       -- it can fuzzy find! It's more than just a "file finder", it can search
       -- many different aspects of Neovim, your workspace, LSP, and more!
@@ -489,6 +504,10 @@ require('lazy').setup {
       require('mason-lspconfig').setup {
         handlers = {
           function(server_name)
+            -- Ensure that the rust_analyzer is not setup, because the mrcjkb/rustaceanvim plugin will take care of it.
+            if server_name == 'rust_analyzer' then
+              return
+            end
             local server = servers[server_name] or {}
             -- This handles overriding only values explicitly passed
             -- by the server configuration above. Useful when disabling
