@@ -497,6 +497,7 @@ require('lazy').setup {
         'stylua',
         'latexindent',
         'prettier',
+        'djlint',
         'netcoredbg',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
@@ -533,6 +534,7 @@ require('lazy').setup {
         tex = { 'latexindent' },
         javascript = { 'prettier' },
         typescript = { 'prettier' },
+        html = { 'djlint' },
       },
     },
   },
