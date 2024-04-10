@@ -535,10 +535,14 @@ require('lazy').setup {
         javascript = { 'prettier' },
         typescript = { 'prettier' },
         html = { 'djlint' },
+        css = { 'prettier' },
       },
     },
   },
-
+  {
+    'kkoomen/vim-doge',
+    run = ':call doge#install()',
+  },
   { -- Autocompletion
     'hrsh7th/nvim-cmp',
     event = 'InsertEnter',
@@ -645,6 +649,10 @@ require('lazy').setup {
       -- You can configure highlights by doing something like
       vim.cmd.hi 'Comment gui=none'
     end,
+  },
+  {
+    'rebelot/kanagawa.nvim',
+    priority = 1000,
   },
   {
     'folke/tokyonight.nvim',
