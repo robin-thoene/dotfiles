@@ -1,4 +1,4 @@
--- Disable as per documentation of nvim-tree
+-- Disable as per documentation of nvim-treeini
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 -- Set <space> as the leader key
@@ -280,6 +280,12 @@ require('lazy').setup {
         --   },
         -- },
         -- pickers = {}
+        pickers = {
+          find_files = {
+            find_command = { 'rg', '--files', '--hidden', '--glob', '!**/.git/*' },
+          },
+        },
+
         extensions = {
           ['ui-select'] = {
             require('telescope.themes').get_dropdown(),
@@ -534,6 +540,7 @@ require('lazy').setup {
         tex = { 'latexindent' },
         javascript = { 'prettier' },
         typescript = { 'prettier' },
+        typescriptreact = { 'prettier' },
         html = { 'djlint' },
         css = { 'prettier' },
       },
