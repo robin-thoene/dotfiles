@@ -8,16 +8,18 @@
 set $theme /usr/share/sway/themes/matcha-green
 
 # theme variables
-include $theme/definitions
+include $theme/theme.conf
+
+# user theme variable can override the global theme
+include $HOME/.config/sway/definitions.d/theme.conf
 
 # global variables
 include /etc/sway/definitions
 
-# user variables
+# user variables can override global definitions
 include $HOME/.config/sway/definitions.d/*.conf
 
 include /etc/sway/inputs/*
-include /etc/sway/outputs/*
 
 # enable modes
 include /etc/sway/modes/*
@@ -30,4 +32,3 @@ include /etc/sway/config.d/*
 
 # user config
 include $HOME/.config/sway/config.d/*.conf
-
