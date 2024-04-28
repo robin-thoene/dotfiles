@@ -460,6 +460,7 @@ require('lazy').setup {
         tsserver = {},
         tailwindcss = {},
         texlab = {},
+        eslint = {},
         lua_ls = {
           -- cmd = {...},
           -- filetypes { ...},
@@ -503,6 +504,7 @@ require('lazy').setup {
         'stylua',
         'latexindent',
         'prettier',
+        'jq',
         'djlint',
         'netcoredbg',
       })
@@ -543,6 +545,7 @@ require('lazy').setup {
         typescriptreact = { 'prettier' },
         html = { 'djlint' },
         css = { 'prettier' },
+        json = { 'jq' },
       },
     },
   },
@@ -656,6 +659,11 @@ require('lazy').setup {
       -- You can configure highlights by doing something like
       vim.cmd.hi 'Comment gui=none'
     end,
+  },
+  {
+    'catppuccin/nvim',
+    name = 'catppuccin',
+    priority = 1000,
   },
   {
     'rebelot/kanagawa.nvim',
