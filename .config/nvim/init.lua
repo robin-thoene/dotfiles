@@ -62,7 +62,9 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 
 -- Spell checker.
-vim.opt.spelllang = 'en_us'
+-- vim.opt.spellfile = { '~/.config/nvim/spell/en.utf-8.add', '~/.config/nvim/spell/de.utf-8.add' }
+vim.cmd 'set spellfile=~/.config/nvim/spell/en.utf-8.add,~/.config/nvim/spell/de.utf-8.add'
+vim.opt.spelllang = { 'en_us', 'de' }
 vim.opt.spell = true
 
 -- [[ Basic Keymaps ]]
