@@ -546,6 +546,7 @@ require('lazy').setup {
         html = { 'djlint' },
         css = { 'prettier' },
         json = { 'jq' },
+        markdown = { 'prettier' },
       },
     },
   },
