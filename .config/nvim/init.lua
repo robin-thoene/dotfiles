@@ -536,10 +536,6 @@ require('lazy').setup {
       }
     end,
   },
-  {
-    'omnisharp-extended-lsp.nvim',
-  },
-
   { -- Autoformat
     'stevearc/conform.nvim',
     opts = {
@@ -746,6 +742,28 @@ require('lazy').setup {
       --    - Incremental selection: Included, see :help nvim-treesitter-incremental-selection-mod
       --    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
       --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+    end,
+  },
+  {
+    'nvim-neotest/neotest',
+    dependencies = {
+      'nvim-neotest/nvim-nio',
+      'nvim-lua/plenary.nvim',
+      'antoinemadec/FixCursorHold.nvim',
+      'nvim-treesitter/nvim-treesitter',
+      'Issafalcon/neotest-dotnet',
+    },
+    config = function()
+      require('neotest').setup {
+        adapters = {
+          require 'neotest-dotnet' {
+            dap = {
+              args = { justMyCode = false },
+              adapter_name = 'coreclr',
+            },
+          },
+        },
+      }
     end,
   },
 
