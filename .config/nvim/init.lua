@@ -554,6 +554,7 @@ require('lazy').setup {
         css = { 'prettier' },
         json = { 'jq' },
         markdown = { 'prettier' },
+        yaml = { 'prettier' },
       },
     },
   },

@@ -19,3 +19,7 @@ param
 args
 enum
 httpClient
+SalesForce
+observability
+Grafana
+SSO
