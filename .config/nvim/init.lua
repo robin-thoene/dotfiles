@@ -1,3 +1,4 @@
-require("vim_settings")
-require("package_managers/lazy")
-require("keymaps")
+require 'vim_settings'
+require 'auto_commands'
+require 'lazy.lazy'
+require 'keymaps'
