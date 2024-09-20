@@ -1,4 +1,4 @@
 require 'vim_settings'
 require 'auto_commands'
-require 'lazy.lazy'
+require 'config.lazy'
 require 'keymaps'
