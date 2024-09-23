@@ -6,6 +6,8 @@ return {
       'williamboman/mason.nvim',
       'williamboman/mason-lspconfig.nvim',
       'hrsh7th/cmp-nvim-lsp',
+      { 'j-hui/fidget.nvim', opts = {} },
+      'Hoffs/omnisharp-extended-lsp.nvim',
     },
     config = function()
       local mason_lspconf = require 'mason-lspconfig'
