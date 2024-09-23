@@ -23,3 +23,5 @@ vim.keymap.set('n', '<leader>sb', telescope_builtin.buffers, { desc = 'Telescope
 vim.keymap.set('n', '<leader>sh', telescope_builtin.help_tags, { desc = 'Telescope help tags' })
 -- [[ nvim-tree ]]
 vim.keymap.set('n', '<C-b>', '<cmd>NvimTreeToggle<CR>', { desc = 'Toggle file explorer' })
+-- [[ vim-doge ]]
+vim.keymap.set('n', '<leader>cd', '<cmd>DogeGenerate<CR>', { desc = 'Generate documentation' })
