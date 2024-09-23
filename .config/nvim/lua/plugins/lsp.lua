@@ -17,6 +17,10 @@ return {
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
       mason_lspconf.setup_handlers {
         function(server_name)
+          -- Do not setup rust_analyzer, because the plugin `mrcjkb/rustaceanvim` plugin will take care of it
+          if server_name == 'rust_analyzer' then
+            return
+          end
           require('lspconfig')[server_name].setup {
             capabilities = capabilities,
           }
