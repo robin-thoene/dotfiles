@@ -1,5 +1,15 @@
 -- Define what packages needs to be installed by the mason tool installer automatically
-local ensure_installed = {}
+local ensure_installed = {
+
+  rust_analyzer = {},
+  'eslint',
+  'lua_ls',
+  'omnisharp',
+  'tailwindcss',
+  'terraformls',
+  'texlab',
+  'ts_ls',
+}
 local formatters = {
   'djlint',
   'jq',
