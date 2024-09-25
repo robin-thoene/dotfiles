@@ -37,3 +37,10 @@ vim.keymap.set('n', '<leader>B', function()
   dap.set_breakpoint(vim.fn.input 'Breakpoint condition: ')
 end, { desc = 'Debug: Set Breakpoint' })
 vim.keymap.set('n', '<F7>', dapui.toggle, { desc = 'Debug: See last session result.' })
+-- [[ neotest ]]
+local neotest = require 'neotest'
+vim.keymap.set('n', '<leader>tr', neotest.run.run, { desc = 'Test: Run nearest test' })
+vim.keymap.set('n', '<leader>td', function()
+  neotest.run.run { strategy = 'dap' }
+end, { desc = 'Test: Debug nearest test' })
+vim.keymap.set('n', '<leader>ts', neotest.run.stop, { desc = 'Test: Stop nearest test' })
