@@ -7,6 +7,8 @@ return {
       wk.add {
         { '<leader>s', group = 'Search' },
         { '<leader>c', group = 'Code' },
+        { '<leader>t', group = 'Test' },
+        { '<leader>tc', group = 'Coverage' },
       }
     end,
   },

@@ -1,5 +1,5 @@
 -- [[ General ]]
-vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+vim.keymap.set('n', '<Esc>', '<Cmd>nohlsearch<CR>')
 -- Keymaps for interacting with diagnostics
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagnostic message' })
@@ -39,8 +39,20 @@ end, { desc = 'Debug: Set Breakpoint' })
 vim.keymap.set('n', '<F7>', dapui.toggle, { desc = 'Debug: See last session result.' })
 -- [[ neotest ]]
 local neotest = require 'neotest'
-vim.keymap.set('n', '<leader>tr', neotest.run.run, { desc = 'Test: Run nearest test' })
+vim.keymap.set('n', '<leader>tr', neotest.run.run, { desc = 'Run nearest test' })
 vim.keymap.set('n', '<leader>td', function()
   neotest.run.run { strategy = 'dap' }
-end, { desc = 'Test: Debug nearest test' })
-vim.keymap.set('n', '<leader>ts', neotest.run.stop, { desc = 'Test: Stop nearest test' })
+end, { desc = 'Debug nearest test' })
+vim.keymap.set('n', '<leader>ta', function()
+  neotest.run.run { suite = true }
+end, { desc = 'Run all tests' })
+vim.keymap.set('n', '<leader>ts', neotest.run.stop, { desc = 'Stop nearest test' })
+-- [[ nvim-coverage ]]
+local coverage = require 'coverage'
+vim.keymap.set('n', '<leader>tcl', function()
+  coverage.load { place = true }
+end, { desc = 'Show line coverage' })
+vim.keymap.set('n', '<leader>tcs', function()
+  coverage.load { place = true }
+  coverage.summary()
+end, { desc = 'Show summary' })
