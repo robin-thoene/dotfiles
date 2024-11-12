@@ -47,3 +47,5 @@ vim.opt.spelllang = { 'en_us', 'de' }
 vim.opt.spell = true
 -- Highlight search results
 vim.opt.hlsearch = true
+-- Define the width of a tab
+vim.opt.tabstop = 4

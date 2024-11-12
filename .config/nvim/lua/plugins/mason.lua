@@ -9,6 +9,7 @@ local formatters = {
 }
 local lsps = {
   'eslint',
+  'gopls',
   'lua_ls',
   'omnisharp',
   'rust_analyzer',
@@ -20,6 +21,7 @@ local lsps = {
 local debuggers = {
   'codelldb',
   'netcoredbg',
+  'delve',
 }
 vim.list_extend(ensure_installed, formatters)
 vim.list_extend(ensure_installed, lsps)
