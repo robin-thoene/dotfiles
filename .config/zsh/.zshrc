@@ -99,10 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export DRACULA_DISPLAY_NEW_LINE=1
 alias gfc="git fetch && git checkout"
-alias startdev="podman start storage-dev redis-dev mssql-dev"
-alias stopdev="podman stop storage-dev redis-dev mssql-dev"
 alias uall="~/dev/robin-thoene/device-automation/manjaro/update.sh"
 alias n="nvim ."
 if [ -x /usr/bin/fzf  ]
