@@ -111,3 +111,4 @@ export NVM_DIR="$HOME/.nvm"
 alias dotfiles='/usr/bin/git --git-dir=/home/robin/dev/robin-thoene/dotfiles/ --work-tree=/home/robin'
 path+=('/home/robin/.cargo/bin')
 path+=('/home/robin/.dotnet/tools')
+path+=('/home/robin/go/bin')

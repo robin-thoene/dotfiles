@@ -9,6 +9,7 @@ local formatters = {
 }
 local lsps = {
   'eslint',
+  'gopls',
   'lua_ls',
   'omnisharp',
   'rust_analyzer',
