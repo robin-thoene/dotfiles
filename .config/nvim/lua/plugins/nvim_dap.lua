@@ -2,6 +2,7 @@ return {
   {
     'mfussenegger/nvim-dap',
     dependencies = {
+      'jay-babu/mason-nvim-dap.nvim',
       'rcarriga/nvim-dap-ui',
       'nvim-neotest/nvim-nio',
       {
@@ -12,6 +13,15 @@ return {
     config = function()
       local dap = require 'dap'
       local dapui = require 'dapui'
+      require('mason-nvim-dap').setup {
+        automatic_setup = false,
+        automatic_installation = false,
+        handlers = {},
+        ensure_installed = {
+          'codelldb',
+          'netcoredbg',
+        },
+      }
       -- Setup the dotnet debugger
       dap.adapters.coreclr = {
         type = 'executable',
