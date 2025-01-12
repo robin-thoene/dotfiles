@@ -1,0 +1,7 @@
+[credential]
+	helper = store
+[user]
+	name = Robin Thöne
+	email = 110201991+robin-thoene@users.noreply.github.com
+[core]
+	editor = nvim
