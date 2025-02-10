@@ -6,6 +6,7 @@ local formatters = {
   'latexindent',
   'prettier',
   'stylua',
+  'taplo',
 }
 local lsps = {
   'eslint',

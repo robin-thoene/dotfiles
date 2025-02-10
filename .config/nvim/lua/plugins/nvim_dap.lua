@@ -17,6 +17,12 @@ return {
         command = '/usr/bin/alacritty',
         args = { '-e' },
       }
+      -- LLDB
+      dap.adapters.lldb = {
+        type = 'executable',
+        command = 'codelldb',
+        name = 'lldb',
+      }
       -- Setup the dotnet debugger
       dap.adapters.coreclr = {
         type = 'executable',
