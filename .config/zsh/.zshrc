@@ -2,6 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
+export ZDOTDIR=$HOME/.config/zsh
 export ZSH="$ZDOTDIR/ohmyzsh"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -108,7 +109,7 @@ if [ -x /usr/bin/fzf  ]
 fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-alias dotfiles='/usr/bin/git --git-dir=/home/robin/dev/robin-thoene/dotfiles/ --work-tree=/home/robin'
-path+=('/home/robin/.cargo/bin')
-path+=('/home/robin/.dotnet/tools')
-path+=('/home/robin/go/bin')
+alias dotfiles='/usr/bin/git --git-dir=$HOME/dev/robin-thoene/dotfiles/ --work-tree=$HOME'
+path+=('$HOME/.cargo/bin')
+path+=('$HOME/.dotnet/tools')
+path+=('$HOME/go/bin')
