@@ -8,8 +8,10 @@ return {
       'hrsh7th/cmp-nvim-lsp',
       { 'j-hui/fidget.nvim', opts = {} },
       'Hoffs/omnisharp-extended-lsp.nvim',
+      'cordx56/rustowl',
     },
     config = function()
+      local lspconfig = require 'lspconfig'
       local mason_lspconf = require 'mason-lspconfig'
       mason_lspconf.setup {
         automatic_installation = false,
@@ -21,11 +23,12 @@ return {
           if server_name == 'rust_analyzer' then
             return
           end
-          require('lspconfig')[server_name].setup {
+          lspconfig[server_name].setup {
             capabilities = capabilities,
           }
         end,
       }
+      lspconfig.rustowlsp.setup {}
     end,
   },
 }
