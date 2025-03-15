@@ -1,7 +1,6 @@
 -- Define what packages needs to be installed by the mason tool installer automatically
 local ensure_installed = {}
 local formatters = {
-  'djlint',
   'jq',
   'latexindent',
   'prettier',

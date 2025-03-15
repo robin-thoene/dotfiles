@@ -110,6 +110,6 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dev/robin-thoene/dotfiles/ --work-tree=$HOME'
-path+=('$HOME/.cargo/bin')
-path+=('$HOME/.dotnet/tools')
-path+=('$HOME/go/bin')
+PATH="$PATH:$HOME/.cargo/bin"
+PATH="$PATH:$HOME/.dotnet/tools"
+PATH="$PATH:$HOME/go/bin"
