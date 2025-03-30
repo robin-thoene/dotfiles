@@ -8,6 +8,7 @@ return {
       set_light_mode = function()
         vim.cmd.colorscheme 'catppuccin-latte'
       end,
+      update_interval = 10000,
     },
   },
 }

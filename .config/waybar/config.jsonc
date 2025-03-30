@@ -39,6 +39,7 @@
 
         // system
         "sway/language",
+        "custom/theme",
         "custom/adaptive-light",
         "custom/sunset",
 
@@ -217,15 +218,22 @@
         "signal": 6
     },
 
-    "custom/wf-recorder": {
-        "interval": "once",
+    "custom/theme": {
+        "format": "{icon}",
+        "interval": 300,
+        "tooltip": true,
+        "format-icons": {
+            "light": "",
+            "dark": "",
+            "auto_light": "󱩷",
+            "auto_dark": "󱩸"
+        },
         "return-type": "json",
-        "format": "{}",
-        "tooltip-format": "{tooltip}",
-        "exec": "echo '{\"class\": \"recording\",\"text\":\"󰑊\",\"tooltip\":\"press $mod+Esc to stop recording\"}'",
-        "exec-if": "pgrep wf-recorder",
-        "on-click": "killall -s SIGINT wf-recorder",
-        "signal": 8
+        "exec-if": "/usr/share/sway/scripts/theme-toggle.sh check",
+        "exec": "/usr/share/sway/scripts/theme-toggle.sh status",
+        "on-click": "/usr/share/sway/scripts/theme-toggle.sh toggle",
+        "on-click-right": "/usr/share/sway/scripts/theme-toggle.sh auto-toggle",
+        "signal": 17
     },
 
     "custom/playerctl": {

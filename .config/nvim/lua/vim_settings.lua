@@ -49,3 +49,5 @@ vim.opt.spell = true
 vim.opt.hlsearch = true
 -- Define the width of a tab
 vim.opt.tabstop = 4
+-- Draw indicator for line width
+vim.opt.colorcolumn = '100'
