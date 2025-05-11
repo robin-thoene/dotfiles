@@ -113,4 +113,3 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/dev/robin-thoene/dotfiles/ --work-t
 PATH="$PATH:$HOME/.cargo/bin"
 PATH="$PATH:$HOME/.dotnet/tools"
 PATH="$PATH:$HOME/go/bin"
-source $HOME/.config/zsh/.secret.env
