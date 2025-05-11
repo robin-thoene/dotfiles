@@ -101,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gfc="git fetch && git checkout"
-alias uall="~/dev/robin-thoene/device-automation/manjaro/update.sh"
+alias uall="~/dev/robin-thoene/device-automation/manjaro-sway/update.sh"
 alias n="nvim ."
 if [ -x /usr/bin/fzf  ]
         then

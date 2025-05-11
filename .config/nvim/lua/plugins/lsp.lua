@@ -28,7 +28,6 @@ return {
           }
         end,
       }
-      lspconfig.rustowlsp.setup {}
     end,
   },
 }

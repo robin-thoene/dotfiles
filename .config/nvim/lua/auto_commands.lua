@@ -22,9 +22,14 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { buffer = event.buf, desc = 'Code action' })
     vim.keymap.set('n', 'K', vim.lsp.buf.hover, { buffer = event.buf, desc = 'Hover documentation' })
     vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, { buffer = event.buf, desc = 'Go to declaration' })
-    -- If the buffer is  csharp, override the key mapping to enrich the functionality
+    -- If the buffer is csharp, override the key mapping to enrich the functionality
     if vim.bo[event.buf].filetype == 'cs' then
       vim.keymap.set('n', 'gd', require('omnisharp_extended').lsp_definitions, { buffer = event.buf, desc = 'Go to definition' })
+    end
+    -- If the buffer is rust, add the rustowl functionality
+    if vim.bo[event.buf].filetype == 'rust' then
+      local rustowl = require 'rustowl'
+      vim.keymap.set('n', '<leader>co', rustowl.rustowl_cursor, { noremap = true, silent = true, desc = 'Toggle RustOwl' })
     end
     -- Automatically highlight references on rest (and clear it automatically)
     local client = vim.lsp.get_client_by_id(event.data.client_id)

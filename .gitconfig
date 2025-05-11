@@ -5,3 +5,5 @@
 	email = 110201991+robin-thoene@users.noreply.github.com
 [core]
 	editor = nvim
+[init]
+	defaultBranch = main
