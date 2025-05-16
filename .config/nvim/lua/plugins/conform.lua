@@ -14,6 +14,8 @@ return {
         typescriptreact = { 'prettier' },
         yaml = { 'prettier' },
         toml = { 'taplo' },
+        sh = { 'shfmt' },
+        bash = { 'shfmt' },
       },
       format_on_save = {
         timeout_ms = 500,
