@@ -1,1 +1,0 @@
-List of available/supported platforms has been retrieved from Slightly Improved Default Theme (https://www.myteamspeak.com/addons/e78bfa79-5302-405e-aa60-c53357a42ca9) - Thank you, ScP.
