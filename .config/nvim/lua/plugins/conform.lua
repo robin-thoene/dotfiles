@@ -7,6 +7,7 @@ return {
         html = { 'prettier' },
         javascript = { 'prettier' },
         json = { 'jq' },
+        jsonc = { 'jq' },
         lua = { 'stylua' },
         markdown = { 'prettier' },
         tex = { 'latexindent' },
