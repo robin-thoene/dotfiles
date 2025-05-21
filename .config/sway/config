@@ -1,16 +1,19 @@
+include colors/catppuccin-mocha
+
 ### Variables
 
-set $mod Alt
+set $mod Mod4
 set $left h
 set $down j
 set $up k
 set $right l
-set $term foot
+set $term alacritty 
 set $menu bemenu-run
 
 ### Output configuration
 
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg #000000 solid_color
+output eDP-1 scale 1.5
 
 ### Idle configuration
 
@@ -146,15 +149,33 @@ bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 # Special key to take a screenshot with grim
 bindsym Print exec grim
+# Quick switch between current and previous workspace
+bindsym $mod+TAB workspace back_and_forth
 
 
 include /etc/sway/config.d/*
 
 exec autotiling-rs
-exec_always swaybg -c 000000
 exec_always {
     pkill waybar
     sleep 0.5 && waybar &
 }
 
 font pango:Roboto 10
+
+# Borders and gaps
+
+default_border pixel 3
+smart_borders no_gaps
+smart_gaps on
+gaps inner 5
+
+# Colors
+
+# target                 title     bg    text   indicator  border
+client.focused           $lavender $base $text  $rosewater $lavender
+client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
+client.unfocused         $overlay0 $base $text  $rosewater $overlay0
+client.urgent            $peach    $base $peach $overlay0  $peach
+client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
+client.background        $base
