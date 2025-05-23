@@ -7,12 +7,13 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term alacritty 
+set $term alacritty
 set $menu bemenu-run
 
 ### Output configuration
 
-output * bg #000000 solid_color
+output * bg bg-normal.png fill
+output DP-2 bg bg-wide.png fill
 output eDP-1 scale 1.5
 
 ### Idle configuration
@@ -33,6 +34,7 @@ input * {
 
 input type:touchpad {
     accel_profile "adaptive"
+    tap enabled
 }
 
 input type:keyboard {
@@ -166,8 +168,6 @@ font pango:Roboto 10
 # Borders and gaps
 
 default_border pixel 3
-smart_borders no_gaps
-smart_gaps on
 gaps inner 5
 
 # Colors
@@ -179,3 +179,7 @@ client.unfocused         $overlay0 $base $text  $rosewater $overlay0
 client.urgent            $peach    $base $peach $overlay0  $peach
 client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
 client.background        $base
+
+# Cursor
+
+seat seat0 xcursor_theme capitaine-cursors
