@@ -8,7 +8,7 @@ set $down j
 set $up k
 set $right l
 set $term alacritty
-set $menu bemenu-run
+set $menu fuzzel
 
 ### Output configuration
 
