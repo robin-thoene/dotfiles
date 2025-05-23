@@ -1,40 +1,113 @@
 {
-		"layer": "top",
-		"position": "top",
-		"modules-left": ["sway/workspaces"],
-		"modules-center": ["sway/mode"],
-		"modules-right": [
-			"cpu",
-			"temperature",
-			"memory",
-			"network",
-			"bluetooth",
-			"pulseaudio",
-			"backlight",
-			"idle_inhibitor",
-			"battery",
-			"clock"
-		],
-		"backlight": {
-		},
-		"battery": {
-		},
-		"bluetooth": {
-		},
-		"clock": {
-			"format": "{:%d.%m.%Y %H:%M}"
-		},
-		"cpu": {
-		},
-		"idle_inhibitor": {
-		},
-		"memory": {
-		},
-		"network": {
-		},
-		"pulseaudio": {
-		},
-		"temperature": {
-			"format": "{temperatureC} C"
-		}
+  "layer": "top",
+  "position": "top",
+  "modules-left": [
+    "sway/workspaces"
+  ],
+  "modules-center": [
+    "clock",
+    "sway/mode"
+  ],
+  "modules-right": [
+    "temperature",
+    "cpu",
+    "memory",
+    "network",
+    "bluetooth",
+    "pulseaudio",
+    "backlight",
+    "idle_inhibitor",
+    "battery"
+  ],
+  "backlight": {
+    "format": "{percent}% {icon}",
+    "format-icons": [
+      "󰃞",
+      "󰃟",
+      "󰃠"
+    ],
+    "scroll-step": 5,
+    "tooltip": false
+  },
+  "battery": {
+    "interval": 300,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}% {icon}",
+    "format-icons": [
+      "󱃍",
+      "󰁺",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ],
+    "format-charging": "{capacity}% 󰂄"
+  },
+  "bluetooth": {
+    "format": "󰂯",
+    "format-off": "󰂲",
+    "on-click": "swaymsg exec '$term -e bluetui'"
+  },
+  "clock": {
+    "format": "{:%d.%m.%Y %H:%M}"
+  },
+  "cpu": {
+    "interval": 60,
+    "format": "󰘚",
+    "states": {
+      "warning": 70,
+      "critical": 90
+    },
+    "on-click": "swaymsg exec '$term -e htop'"
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "󰚥",
+      "deactivated": "󰚦"
+    },
+    "tooltip": true,
+    "tooltip-format-activated": "power-saving disabled",
+    "tooltip-format-deactivated": "power-saving enabled"
+  },
+  "memory": {
+    "interval": 60,
+    "format": "󰍛",
+    "on-click": "swaymsg exec '$term -e htop -s PERCENT_MEM'"
+  },
+  "network": {
+    "format-wifi": " ",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "󰖪",
+    "tooltip-format-wifi": "{essid}, {signalStrength}%",
+    "tooltip-format-ethernet": "{ifname}",
+    "tooltip-format-disconnected": "Disconnected",
+    "on-click": "swaymsg exec '$term -e nmtui connect'"
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-muted": "󰖁",
+    "format-icons": {
+      "headphone": "󰋋",
+      "headset": "󰋎",
+      "default": [
+        "󰕿",
+        "󰖀",
+        "󰕾"
+      ]
+    },
+    "scroll-step": 5,
+    "on-click": "swaymsg exec '$term -e pulsemixer'",
+    "tooltip": false
+  },
+  "temperature": {
+    "format": ""
+  }
 }

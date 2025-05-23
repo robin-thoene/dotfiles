@@ -1,11 +1,49 @@
+@import "mocha.css";
+
 * {
-		border: none;
-		border-radius: 0;
-		font-family: Roboto, Helvetica, Arial, sans-serif;
-		font-size: 13;
-		min-height: 0;
+  border: none;
+  border-radius: 0;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 13;
+  min-height: 0;
 }
 
 window#waybar {
-		background: black;
+  color: @text;
+  background-color: transparent;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  margin: 5 5 0 5;
+  background-color: @base;
+  border: 3 solid @lavender;
+  padding: 3 3;
+}
+
+.modules-center,
+.modules-right {
+  padding: 3 15;
+}
+
+.modules-right *,
+.modules-center * {
+  margin: 0 10;
+}
+
+#workspaces button {
+  color: @text;
+  padding: 5 5;
+}
+
+#workspaces button:hover {
+  background: @surface0;
+  transition: none;
+  box-shadow: none;
+}
+
+#workspaces button.focused {
+  background-color: @lavender;
+  color: @crust;
 }
