@@ -19,9 +19,9 @@ output eDP-1 scale 1.5
 ### Idle configuration
 
 exec swayidle -w \
-        timeout 600 'swaylock -f -c 000000' \
+        timeout 600 'swaylock -f' \
         timeout 900 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-        before-sleep 'swaylock -f -c 000000'
+        before-sleep 'swaylock -f'
 
 ### Input configuration
 
@@ -153,6 +153,8 @@ bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 bindsym Print exec grim
 # Quick switch between current and previous workspace
 bindsym $mod+TAB workspace back_and_forth
+# Quick locking screen
+bindsym $mod+Escape exec "swaylock -f"
 
 
 include /etc/sway/config.d/*
