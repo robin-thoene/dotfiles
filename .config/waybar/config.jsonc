@@ -20,7 +20,7 @@
     "battery"
   ],
   "backlight": {
-    "format": "{percent}% {icon}",
+    "format": "{icon}",
     "format-icons": [
       "󰃞",
       "󰃟",
@@ -65,7 +65,7 @@
       "warning": 70,
       "critical": 90
     },
-    "on-click": "swaymsg exec '$term -e htop'"
+    "on-click": "swaymsg exec '$term -e htop -s PERCENT_CPU'"
   },
   "idle_inhibitor": {
     "format": "{icon}",
