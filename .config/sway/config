@@ -190,3 +190,4 @@ client.background        $base
 seat seat0 xcursor_theme capitaine-cursors
 
 exec mako
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
