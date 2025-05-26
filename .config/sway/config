@@ -15,6 +15,9 @@ set $menu fuzzel
 output * bg bg-normal.png fill
 output DP-2 bg bg-wide.png fill
 output eDP-1 scale 1.5
+output eDP-1 position 0,0
+output DP-2 position 1504,0
+workspace 1 output eDP-1
 
 ### Idle configuration
 
@@ -185,3 +188,5 @@ client.background        $base
 # Cursor
 
 seat seat0 xcursor_theme capitaine-cursors
+
+exec mako
