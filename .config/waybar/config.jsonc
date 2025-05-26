@@ -17,6 +17,7 @@
     "pulseaudio",
     "backlight",
     "idle_inhibitor",
+    "custom/theme-toggle",
     "battery"
   ],
   "backlight": {
@@ -109,5 +110,16 @@
   },
   "temperature": {
     "format": ""
+  },
+  "custom/theme-toggle": {
+    "format": "{icon}",
+    "return-type": "json",
+    "format-icons": {
+      "dark": "",
+      "light": ""
+    },
+    "interval": "once",
+    "exec": "~/.config/waybar/scripts/detect_theme.sh",
+    "on-click": "~/.config/waybar/scripts/theme_toggle.sh"
   }
 }

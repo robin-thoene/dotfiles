@@ -28,7 +28,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # alias
 alias gfc="git fetch && git checkout"
-alias uall="~/dev/robin-thoene/device-automation/manjaro-sway/update.sh"
+alias uall="~/dev/robin-thoene/device-automation/arch/update.sh"
 alias n="nvim ."
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dev/robin-thoene/dotfiles/ --work-tree=$HOME'
 
