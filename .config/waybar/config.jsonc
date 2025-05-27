@@ -119,7 +119,7 @@
       "light": ""
     },
     "interval": "once",
-    "exec": "~/.config/waybar/scripts/detect_theme.sh",
-    "on-click": "~/.config/waybar/scripts/theme_toggle.sh"
+    "exec": "~/dev/robin-thoene/device-automation/arch/detect_theme.sh",
+    "on-click": "~/dev/robin-thoene/device-automation/arch/theme_toggle.sh"
   }
 }
