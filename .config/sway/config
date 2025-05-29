@@ -158,6 +158,8 @@ bindsym Print exec grim
 bindsym $mod+TAB workspace back_and_forth
 # Quick locking screen
 bindsym $mod+Escape exec "swaylock -f"
+# Take a screenshot of a selected region into the clipboard
+bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy
 
 
 include /etc/sway/config.d/*
