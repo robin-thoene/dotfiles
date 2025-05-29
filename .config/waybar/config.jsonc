@@ -29,7 +29,8 @@
       "󰃠"
     ],
     "scroll-step": 5,
-    "tooltip": false
+    "tooltip": true,
+    "tooltip-format": "{percent}%"
   },
   "battery": {
     "interval": 300,
@@ -85,6 +86,7 @@
     "on-click": "swaymsg exec '$term -e htop -s PERCENT_MEM'"
   },
   "network": {
+    "interval": 60,
     "format-wifi": " ",
     "format-ethernet": "󰈀",
     "format-disconnected": "󰖪",
@@ -125,6 +127,7 @@
       "dark": "",
       "light": ""
     },
+    "tooltip": false,
     "interval": "once",
     "exec": "~/dev/robin-thoene/device-automation/arch/detect_theme.sh",
     "on-click": "~/dev/robin-thoene/device-automation/arch/theme_toggle.sh"
