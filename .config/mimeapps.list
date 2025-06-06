@@ -1,2 +1,15 @@
 [Default Applications]
 application/pdf=org.pwmt.zathura.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-5L4O72.desktop
+message/rfc822=userapp-Thunderbird-5L4O72.desktop
+x-scheme-handler/mid=userapp-Thunderbird-5L4O72.desktop
+x-scheme-handler/webcal=userapp-Thunderbird-QBEQ72.desktop
+text/calendar=userapp-Thunderbird-QBEQ72.desktop
+application/x-extension-ics=userapp-Thunderbird-QBEQ72.desktop
+x-scheme-handler/webcals=userapp-Thunderbird-QBEQ72.desktop
+
+[Added Associations]
+x-scheme-handler/mailto=userapp-Thunderbird-5L4O72.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-5L4O72.desktop;
+x-scheme-handler/webcal=userapp-Thunderbird-QBEQ72.desktop;
+x-scheme-handler/webcals=userapp-Thunderbird-QBEQ72.desktop;
