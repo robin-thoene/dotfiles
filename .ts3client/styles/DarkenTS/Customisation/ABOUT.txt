@@ -1,7 +1,0 @@
-This new folder structure is another attempt to further streamline the procedure of customising your personal DarkenTS experience.
-
-Unfortunately it still requires a little bit of manual work. Future plans involve a more comfortable, centralised and far more elegant way to make it even easier to customise DarkenTS, but that implementation date is written in the stars.
-
-Thank you for you using DarkenTS!
-
-Please leave any feedback at https://community.teamspeak.com/t/skin-release-darkents-save-the-eyes/1091 (found also in DarkenTS\Feedback for your convenience).

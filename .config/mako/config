@@ -1,0 +1,7 @@
+# styling
+
+padding=30
+border-size=3
+font=Roboto 11
+
+include=~/.config/mako/colors
