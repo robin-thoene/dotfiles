@@ -24,13 +24,14 @@ local debuggers = {
   'netcoredbg',
   'delve',
 }
+
 vim.list_extend(ensure_installed, formatters)
 vim.list_extend(ensure_installed, lsps)
 vim.list_extend(ensure_installed, debuggers)
 
 return {
   {
-    'williamboman/mason.nvim',
+    'mason-org/mason.nvim',
     config = function()
       require('mason').setup()
     end,

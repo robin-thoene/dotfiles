@@ -26,11 +26,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
     if vim.bo[event.buf].filetype == 'cs' then
       vim.keymap.set('n', 'gd', require('omnisharp_extended').lsp_definitions, { buffer = event.buf, desc = 'Go to definition' })
     end
-    -- If the buffer is rust, add the rustowl functionality
-    if vim.bo[event.buf].filetype == 'rust' then
-      local rustowl = require 'rustowl'
-      vim.keymap.set('n', '<leader>co', rustowl.rustowl_cursor, { noremap = true, silent = true, desc = 'Toggle RustOwl' })
-    end
     -- Automatically highlight references on rest (and clear it automatically)
     local client = vim.lsp.get_client_by_id(event.data.client_id)
     if client and client.server_capabilities.documentHighlightProvider then
