@@ -33,6 +33,7 @@ alias n="nvim ."
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dev/robin-thoene/dotfiles/ --work-tree=$HOME'
 
 # env
+export EDITOR=nvim
 PATH="$PATH:$HOME/.cargo/bin"
 PATH="$PATH:$HOME/.dotnet/tools"
 PATH="$PATH:$HOME/go/bin"
