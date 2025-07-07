@@ -59,7 +59,8 @@
     "on-click": "swaymsg exec '$term -e bluetui'"
   },
   "clock": {
-    "format": "{:%d.%m.%Y %H:%M}"
+    "format": "{:%d.%m.%Y %H:%M}",
+    "tooltip": false
   },
   "cpu": {
     "interval": 60,
