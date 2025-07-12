@@ -6,10 +6,10 @@
   "SKIP_HOST_UPDATE": true,
   "chromiumSwitches": {},
   "WINDOW_BOUNDS": {
-    "x": 0,
-    "y": 0,
-    "width": 1693,
-    "height": 1386
+    "x": 728,
+    "y": 52,
+    "width": 940,
+    "height": 900
   },
   "BACKGROUND_COLOR": "#121214"
 }
