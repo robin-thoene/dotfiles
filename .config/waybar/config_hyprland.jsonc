@@ -1,0 +1,134 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "clock",
+    "hyprland/submap"
+  ],
+  "modules-right": [
+    "temperature",
+    "cpu",
+    "memory",
+    "network",
+    "bluetooth",
+    "pulseaudio",
+    "backlight",
+    "hyprland/language",
+    "idle_inhibitor",
+    "custom/theme-toggle",
+    "battery"
+  ],
+  "backlight": {
+    "format": "{icon}",
+    "format-icons": [
+      "󰃞",
+      "󰃟",
+      "󰃠"
+    ],
+    "scroll-step": 5,
+    "tooltip": true,
+    "tooltip-format": "{percent}%"
+  },
+  "battery": {
+    "interval": 300,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}% {icon}",
+    "format-icons": [
+      "󱃍",
+      "󰁺",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ],
+    "format-charging": "{capacity}% 󰂄"
+  },
+  "bluetooth": {
+    "format": "󰂯",
+    "format-off": "󰂲",
+    "on-click": "hyprctl dispatch exec 'alacritty -e bluetui'"
+  },
+  "clock": {
+    "format": "{:%d.%m.%Y %H:%M}",
+    "tooltip": false
+  },
+  "cpu": {
+    "interval": 60,
+    "format": "󰘚",
+    "states": {
+      "warning": 70,
+      "critical": 90
+    },
+    "on-click": "hyprctl dispatch exec 'alacritty -e htop -s PERCENT_CPU'"
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "󰚥",
+      "deactivated": "󰚦"
+    },
+    "tooltip": true,
+    "tooltip-format-activated": "power-saving disabled",
+    "tooltip-format-deactivated": "power-saving enabled"
+  },
+  "memory": {
+    "interval": 60,
+    "format": "󰍛",
+    "on-click": "hyprctl dispatch exec 'alacritty -e htop -s PERCENT_MEM'"
+  },
+  "network": {
+    "interval": 60,
+    "format-wifi": " ",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "󰖪",
+    "tooltip-format-wifi": "{essid}, {signalStrength}%",
+    "tooltip-format-ethernet": "{ifname}",
+    "tooltip-format-disconnected": "Disconnected",
+    "on-click": "hyprctl dispatch exec 'alacritty -e impala'"
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-muted": "󰖁",
+    "format-icons": {
+      "headphone": "󰋋",
+      "headset": "󰋎",
+      "default": [
+        "󰕿",
+        "󰖀",
+        "󰕾"
+      ]
+    },
+    "scroll-step": 5,
+    "on-click": "hyprctl dispatch exec 'alacritty -e pulsemixer'",
+    "tooltip": false
+  },
+  "hyprland/language": {
+    "format": " {short}",
+    "on-click": "~/dev/robin-thoene/device-automation/arch/kb_layout_next.sh"
+  },
+  "temperature": {
+    "format": ""
+  },
+  "custom/theme-toggle": {
+    "format": "{icon}",
+    "return-type": "json",
+    "format-icons": {
+      "dark": "",
+      "light": ""
+    },
+    "tooltip": false,
+    "interval": "once",
+    "exec": "~/dev/robin-thoene/device-automation/arch/detect_theme.sh",
+    "on-click": "~/dev/robin-thoene/device-automation/arch/theme_toggle.sh"
+  }
+}

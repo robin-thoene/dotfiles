@@ -2,10 +2,10 @@
 
 * {
   border: none;
-  border-radius: 0;
+  border-radius: 7px;
   font-family: Roboto, Helvetica, Arial, sans-serif;
-  font-size: 13;
-  min-height: 0;
+  font-size: 13px;
+  min-height: 0px;
 }
 
 window#waybar {
@@ -16,25 +16,29 @@ window#waybar {
 .modules-left,
 .modules-center,
 .modules-right {
-  margin: 5 5 0 5;
+  margin: 5px 5px 0px 5px;
   background-color: @base;
-  border: 3 solid @lavender;
-  padding: 3 3;
+  border: 3px solid @lavender;
+  padding: 3px 3px;
 }
 
 .modules-center,
 .modules-right {
-  padding: 3 15;
+  padding: 3px 15px;
 }
 
 .modules-right *,
 .modules-center * {
-  margin: 0 10;
+  margin: 0px 10px;
+}
+
+.modules-left button {
+  margin: 0px 3px;
 }
 
 #workspaces button {
   color: @text;
-  padding: 5 5;
+  padding: 5px 5px;
 }
 
 #workspaces button:hover {
@@ -43,7 +47,8 @@ window#waybar {
   box-shadow: none;
 }
 
-#workspaces button.focused {
+#workspaces button.focused,
+#workspaces button.active {
   background-color: @lavender;
   color: @crust;
 }
