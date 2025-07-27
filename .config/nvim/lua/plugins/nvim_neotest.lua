@@ -11,6 +11,7 @@ return {
     config = function()
       require('neotest').setup {
         adapters = {
+          require 'rustaceanvim.neotest',
           require 'neotest-dotnet' {
             dap = {
               adapter_name = 'coreclr',

@@ -29,14 +29,14 @@ vim.keymap.set('n', '<leader>cd', '<cmd>DogeGenerate<CR>', { desc = 'Generate do
 local dap = require 'dap'
 local dapui = require 'dapui'
 vim.keymap.set('n', '<F5>', dap.continue, { desc = 'Debug: Start/Continue' })
-vim.keymap.set('n', '<F11>', dap.step_into, { desc = 'Debug: Step Into' })
-vim.keymap.set('n', '<F10>', dap.step_over, { desc = 'Debug: Step Over' })
-vim.keymap.set('n', '<S-F11>', dap.step_out, { desc = 'Debug: Step Out' })
+vim.keymap.set('n', '<F6>', dap.step_over, { desc = 'Debug: Step Over' })
+vim.keymap.set('n', '<F7>', dap.step_into, { desc = 'Debug: Step Into' })
+vim.keymap.set('n', '<S-F7>', dap.step_out, { desc = 'Debug: Step Out' })
 vim.keymap.set('n', '<leader>b', dap.toggle_breakpoint, { desc = 'Debug: Toggle Breakpoint' })
 vim.keymap.set('n', '<leader>B', function()
   dap.set_breakpoint(vim.fn.input 'Breakpoint condition: ')
 end, { desc = 'Debug: Set Breakpoint' })
-vim.keymap.set('n', '<F7>', dapui.toggle, { desc = 'Debug: See last session result.' })
+vim.keymap.set('n', '<F4>', dapui.toggle, { desc = 'Debug: See last session result.' })
 -- [[ neotest ]]
 local neotest = require 'neotest'
 vim.keymap.set('n', '<leader>tr', neotest.run.run, { desc = 'Run nearest test' })
