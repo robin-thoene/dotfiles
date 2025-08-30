@@ -12,6 +12,7 @@ local lsps = {
   'eslint',
   'gopls',
   'lua_ls',
+  'marksman',
   'omnisharp',
   'rust_analyzer',
   'tailwindcss',
