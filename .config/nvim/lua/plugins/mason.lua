@@ -16,6 +16,7 @@ local lsps = {
   'omnisharp',
   'rust_analyzer',
   'tailwindcss',
+  'templ',
   'terraformls',
   'texlab',
   'ts_ls',
