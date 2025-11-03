@@ -96,7 +96,11 @@ return {
       -- Process launch.json and tasks.json files
       require('overseer').setup()
       require('dap.ext.vscode').json_decode = require('overseer.json').decode
-      require('dap.ext.vscode').load_launchjs(nil, { codelldb = { 'rust' }, lldb = { 'rust' }, coreclr = { 'cs' } })
+      require('dap.ext.vscode').load_launchjs(nil, {
+        codelldb = { 'rust' },
+        lldb = { 'rust' },
+        coreclr = { 'cs' },
+      })
     end,
   },
 }

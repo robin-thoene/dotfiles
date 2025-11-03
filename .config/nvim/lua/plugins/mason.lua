@@ -20,6 +20,7 @@ local lsps = {
   'terraformls',
   'texlab',
   'ts_ls',
+  'yaml-language-server',
 }
 local debuggers = {
   'codelldb',
