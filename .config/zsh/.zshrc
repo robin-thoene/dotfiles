@@ -31,6 +31,8 @@ alias gfc="git fetch && git checkout"
 alias uall="~/dev/robin-thoene/device-automation/arch/update.sh"
 alias n="nvim ."
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dev/robin-thoene/dotfiles/ --work-tree=$HOME'
+alias tmc='tmux a -t'
+alias tmk='tmux kill-session -t'
 
 # env
 export EDITOR=nvim
