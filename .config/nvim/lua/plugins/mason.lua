@@ -15,6 +15,7 @@ local lsps = {
   'marksman',
   'omnisharp',
   'rust_analyzer',
+  'slint_lsp',
   'tailwindcss',
   'templ',
   'terraformls',
