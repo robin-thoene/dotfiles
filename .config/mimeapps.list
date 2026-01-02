@@ -1,15 +1,15 @@
 [Default Applications]
 application/pdf=org.pwmt.zathura.desktop
-x-scheme-handler/mailto=userapp-Thunderbird-7IL172.desktop
-message/rfc822=userapp-Thunderbird-7IL172.desktop
-x-scheme-handler/mid=userapp-Thunderbird-7IL172.desktop
-x-scheme-handler/webcal=userapp-Thunderbird-C5F272.desktop
-text/calendar=userapp-Thunderbird-C5F272.desktop
-application/x-extension-ics=userapp-Thunderbird-C5F272.desktop
-x-scheme-handler/webcals=userapp-Thunderbird-C5F272.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-TW0EH3.desktop
+message/rfc822=userapp-Thunderbird-TW0EH3.desktop
+x-scheme-handler/mid=userapp-Thunderbird-TW0EH3.desktop
+x-scheme-handler/webcal=userapp-Thunderbird-SB5GH3.desktop
+text/calendar=userapp-Thunderbird-SB5GH3.desktop
+application/x-extension-ics=userapp-Thunderbird-SB5GH3.desktop
+x-scheme-handler/webcals=userapp-Thunderbird-SB5GH3.desktop
 
 [Added Associations]
-x-scheme-handler/mailto=userapp-Thunderbird-7IL172.desktop;userapp-Thunderbird-5L4O72.desktop;
-x-scheme-handler/mid=userapp-Thunderbird-7IL172.desktop;userapp-Thunderbird-5L4O72.desktop;
-x-scheme-handler/webcal=userapp-Thunderbird-C5F272.desktop;userapp-Thunderbird-QBEQ72.desktop;
-x-scheme-handler/webcals=userapp-Thunderbird-C5F272.desktop;userapp-Thunderbird-QBEQ72.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-TW0EH3.desktop;userapp-Thunderbird-7IL172.desktop;userapp-Thunderbird-5L4O72.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-TW0EH3.desktop;userapp-Thunderbird-7IL172.desktop;userapp-Thunderbird-5L4O72.desktop;
+x-scheme-handler/webcal=userapp-Thunderbird-SB5GH3.desktop;userapp-Thunderbird-C5F272.desktop;userapp-Thunderbird-QBEQ72.desktop;
+x-scheme-handler/webcals=userapp-Thunderbird-SB5GH3.desktop;userapp-Thunderbird-C5F272.desktop;userapp-Thunderbird-QBEQ72.desktop;
