@@ -1,15 +1,17 @@
 [Default Applications]
 application/pdf=org.pwmt.zathura.desktop
-x-scheme-handler/mailto=userapp-Thunderbird-TW0EH3.desktop
-message/rfc822=userapp-Thunderbird-TW0EH3.desktop
-x-scheme-handler/mid=userapp-Thunderbird-TW0EH3.desktop
-x-scheme-handler/webcal=userapp-Thunderbird-SB5GH3.desktop
-text/calendar=userapp-Thunderbird-SB5GH3.desktop
-application/x-extension-ics=userapp-Thunderbird-SB5GH3.desktop
-x-scheme-handler/webcals=userapp-Thunderbird-SB5GH3.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-GZK8I3.desktop
+message/rfc822=userapp-Thunderbird-GZK8I3.desktop
+x-scheme-handler/mid=userapp-Thunderbird-GZK8I3.desktop
+x-scheme-handler/webcal=userapp-Thunderbird-JVOAJ3.desktop
+text/calendar=userapp-Thunderbird-JVOAJ3.desktop
+application/x-extension-ics=userapp-Thunderbird-JVOAJ3.desktop
+x-scheme-handler/webcals=userapp-Thunderbird-JVOAJ3.desktop
+x-scheme-handler/sgnl=signal.desktop
+x-scheme-handler/signalcaptcha=signal.desktop
 
 [Added Associations]
-x-scheme-handler/mailto=userapp-Thunderbird-TW0EH3.desktop;userapp-Thunderbird-7IL172.desktop;userapp-Thunderbird-5L4O72.desktop;
-x-scheme-handler/mid=userapp-Thunderbird-TW0EH3.desktop;userapp-Thunderbird-7IL172.desktop;userapp-Thunderbird-5L4O72.desktop;
-x-scheme-handler/webcal=userapp-Thunderbird-SB5GH3.desktop;userapp-Thunderbird-C5F272.desktop;userapp-Thunderbird-QBEQ72.desktop;
-x-scheme-handler/webcals=userapp-Thunderbird-SB5GH3.desktop;userapp-Thunderbird-C5F272.desktop;userapp-Thunderbird-QBEQ72.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-GZK8I3.desktop;userapp-Thunderbird-TW0EH3.desktop;userapp-Thunderbird-7IL172.desktop;userapp-Thunderbird-5L4O72.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-GZK8I3.desktop;userapp-Thunderbird-TW0EH3.desktop;userapp-Thunderbird-7IL172.desktop;userapp-Thunderbird-5L4O72.desktop;
+x-scheme-handler/webcal=userapp-Thunderbird-JVOAJ3.desktop;userapp-Thunderbird-SB5GH3.desktop;userapp-Thunderbird-C5F272.desktop;userapp-Thunderbird-QBEQ72.desktop;
+x-scheme-handler/webcals=userapp-Thunderbird-JVOAJ3.desktop;userapp-Thunderbird-SB5GH3.desktop;userapp-Thunderbird-C5F272.desktop;userapp-Thunderbird-QBEQ72.desktop;
