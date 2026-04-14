@@ -12,6 +12,7 @@
     "height": 900
   },
   "BACKGROUND_COLOR": "#121214",
-  "offloadAdmControls": false,
-  "enableHardwareAcceleration": true
+  "offloadAdmControls": true,
+  "enableHardwareAcceleration": true,
+  "openH264Enabled": true
 }
