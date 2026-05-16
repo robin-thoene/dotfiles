@@ -22,10 +22,6 @@ if [ -x /usr/bin/fzf  ]
                 source /usr/share/fzf/key-bindings.zsh
 fi
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
 # alias
 alias gfc="git fetch && git checkout"
 alias uall="~/dev/robin-thoene/device-automation/arch/update.sh"
