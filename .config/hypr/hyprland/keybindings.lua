@@ -12,7 +12,7 @@ hl.bind(confVars.mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(confVars.mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
 hl.bind(confVars.mainMod .. " + ESCAPE", hl.dsp.exec_cmd("hyprlock --no-fade-in --grace 0"))
 -- Screenshot area selection to clipboard
--- bind = $mainMod SHIFT, P, exec, grim -g "$(slurp)" - | wl-copy TODO: figure this out
+hl.bind(confVars.mainMod .. " + SHIFT + P", hl.dsp.exec_cmd('grim -g "$(slurp)" - | wl-copy'))
 -- Move focus hjkl
 hl.bind(confVars.mainMod .. " + " .. confVars.left, hl.dsp.focus({ direction = "left" }))
 hl.bind(confVars.mainMod .. " + " .. confVars.right, hl.dsp.focus({ direction = "right" }))
