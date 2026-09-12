@@ -10,7 +10,6 @@ return {
       'Hoffs/omnisharp-extended-lsp.nvim',
     },
     config = function()
-      local lspconfig = require 'lspconfig'
       local mason_lspconf = require 'mason-lspconfig'
       mason_lspconf.setup {
         ensure_installed = {},
