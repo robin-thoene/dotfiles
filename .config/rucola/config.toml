@@ -1,0 +1,54 @@
+file_types = ["markdown"]
+default_extension = "md"
+cache_index = false
+enable_git = false
+theme = "default_dark"
+stats_show = "Local"
+select_columns = [
+  [
+    "Name",
+    "Name",
+  ],
+  [
+    "   Words",
+    "Words",
+  ],
+  [
+    "   Chars",
+    "Chars",
+  ],
+  [
+    "GlobalOut",
+    "GlobalOutLinks",
+  ],
+  [
+    "LocalOut",
+    "LocalOutLinks",
+  ],
+  [
+    "GlobalIn",
+    "GlobalInLinks",
+  ],
+  [
+    "LocalIn",
+    "LocalInLinks",
+  ],
+]
+
+tag_match = "Exact"
+default_sorting = "Name"
+default_sorting_asc = true
+editor = ["nvim", "%p"]
+viewer = ["firefox", "%p"]
+viewer_type = "Html"
+enable_html = true
+css = "default_dark"
+katex = false
+
+[diary]
+enabled = true
+initial_content = """
+
+#diary
+"""
+title_format = "Daily note for %F"
