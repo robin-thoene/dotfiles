@@ -12,7 +12,7 @@ ZSH_THEME="gnzh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z fzf fzf-tab)
+plugins=(git z fzf fzf-tab rust)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -24,7 +24,6 @@ fi
 
 # alias
 alias gfc="git fetch && git checkout"
-alias uall="~/dev/robin-thoene/device-automation/arch/update.sh"
 alias n="nvim ."
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dev/robin-thoene/dotfiles/ --work-tree=$HOME'
 alias tmc='tmux a -t'

@@ -56,7 +56,7 @@
   "bluetooth": {
     "format": "󰂯",
     "format-off": "󰂲",
-    "on-click": "hyprctl dispatch exec 'alacritty -e bluetui'"
+    "on-click": "hyprctl dispatch 'hl.dsp.exec_cmd(\"alacritty -e bluetui\")'"
   },
   "clock": {
     "format": "{:%d.%m.%Y %H:%M}",
@@ -69,7 +69,7 @@
       "warning": 70,
       "critical": 90
     },
-    "on-click": "hyprctl dispatch exec 'alacritty -e htop -s PERCENT_CPU'"
+    "on-click": "hyprctl dispatch 'hl.dsp.exec_cmd(\"alacritty -e htop -s PERCENT_CPU\")'"
   },
   "idle_inhibitor": {
     "format": "{icon}",
@@ -84,7 +84,7 @@
   "memory": {
     "interval": 60,
     "format": "󰍛",
-    "on-click": "hyprctl dispatch exec 'alacritty -e htop -s PERCENT_MEM'"
+    "on-click": "hyprctl dispatch 'hl.dsp.exec_cmd(\"alacritty -e htop -s PERCENT_MEM\")'"
   },
   "network": {
     "interval": 60,
@@ -94,7 +94,7 @@
     "tooltip-format-wifi": "{essid}, {signalStrength}%",
     "tooltip-format-ethernet": "{ifname}",
     "tooltip-format-disconnected": "Disconnected",
-    "on-click": "hyprctl dispatch exec 'alacritty -e impala'"
+    "on-click": "hyprctl dispatch 'hl.dsp.exec_cmd(\"alacritty -e impala\")'"
   },
   "pulseaudio": {
     "format": "{volume}% {icon}",
@@ -109,7 +109,7 @@
       ]
     },
     "scroll-step": 5,
-    "on-click": "hyprctl dispatch exec 'alacritty -e pulsemixer'",
+    "on-click": "hyprctl dispatch 'hl.dsp.exec_cmd(\"alacritty -e pulsemixer\")'",
     "tooltip": false
   },
   "hyprland/language": {
